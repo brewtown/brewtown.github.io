@@ -9,29 +9,26 @@ html, body {
 	padding: 0;
 }
 
-.Container {
+.Blast {
 	position: absolute;
-	display: table;
 	padding: 10px;
 	width: 100%;
 	height: 100%;
 	background-color: #00a091;
-}
-
-.Blast {
-	display: table-cell;
-	vertical-align: middle;
-	line-height: 1.2;
 	text-align: center;
 }
 
 .Blast-title {
+	position: relative;
+	top: 50%;
+	margin-top: -60px;
 	color: white;
 	font-family: 'chunkfiveroman';
-	font-size: 40px;
+	font-size: 50px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	letter-spacing: -1px;
+	line-height: 1.2;
 	text-rendering: optimizelegibility;
 }
 
@@ -67,9 +64,9 @@ html, body {
 }
 
 @media (max-width: 737px) {
-	.blast {
+	.Blast-title {
 		font-size: 30px;
-		line-height: 1.33;
+		line-height: 1.25;
 	}
 }
 
