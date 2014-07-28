@@ -1,0 +1,53 @@
+doctype
+html
+	head
+		// Standard Metadata
+		title=title || "Brewtown"
+		meta(name="description" content=description || "Find great brew near you. Launching October 2014.")
+		meta(name="keywords" content=keywords || "beer, local, brewtown, community, tap")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		meta(name="apple-mobile-web-app-capable" content="yes")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(charset="utf-8")
+		base(href="/")
+
+		// Dublin Core
+		link(rel="schema.DC" href="http://purl.org/dc/elements/1.1/")
+		meta(name="DC.title" content=title || "Brewtown")
+		meta(name="DC.identifier" content=url || "https://brewtown.co")
+		meta(name="DC.description" content=description || "Find great brew near you. Launching October 2014.")
+		meta(name="DC.subject" content=keywords || "beer, local, brewtown, community, tap")
+		meta(name="DC.language" scheme="ISO639-1" content="en")
+
+		// Open Graph Metadata (Facebook)
+		meta(property="og:title" content=title || "Brewtown")
+		meta(property="og:description" content=description || "Find great brew near you. Launching October 2014.")
+		meta(property="og:site_name" content=keywords || "beer, local, brewtown, community, tap")
+		meta(property="og:url" content=url || "https://brewtown.co")
+		meta(property="og:image" content=image || "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/t1.0-9/10501610_748114545247122_24637302947214780_n.png")
+		meta(property="fb:app_id" content="1465279063709869")
+
+		// Twitter Metadata
+		meta(name="twitter:card" content="summary")
+		meta(name="twitter:title" content=title || "Brewtown")
+		meta(name="twitter:description" content=description || "Find great brew near you. Launching October 2014.")
+		meta(name="twitter:image" content=image || "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/t1.0-9/10501610_748114545247122_24637302947214780_n.png")
+		meta(name="twitter:site" content=url || "https://brewtown.co")
+
+		link(rel="stylesheet" href="/brewtown.css")
+
+		// Load Favicon
+		link(rel="shortcut icon" href="/favicon.ico")
+		link(rel="icon" sizes="16x16 32x32 48x48 256x256" href="/favicon.ico")
+	body
+		.Container
+			.Blast
+				.Blast-title Brewtown is launching soon.
+		.SocialIcon-container
+			a(href="https://www.facebook.com/brewtownco" target="_blank")
+				.SocialIcon.e-facebook
+			a(href="https://www.twitter.com/brewtownco" target="_blank")
+				.SocialIcon.e-twitter
+
+
+		
